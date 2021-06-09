@@ -1,0 +1,18 @@
+import { Function } from './interface';
+declare type Cast<TDesired, TFallback> = TDesired extends TFallback ? TDesired : TFallback;
+declare type UnwrapPromise<T> = T extends Promise<infer U> ? U : T;
+declare type Suppress<T, TCasted = T> = T extends infer U ? Cast<U, TCasted> : never;
+declare type ReturnType<TFunc extends Function> = (TFunc extends (...args: any[]) => infer TRet ? TRet : never);
+declare type Parameters<TFunc extends Function> = (TFunc extends (...args: infer TArgs) => any ? TArgs : never);
+declare type Nullable<T> = T | null | undefined;
+declare type NonNullable<T> = T extends null | undefined ? never : T;
+declare type Promisable<T> = T | Promise<T>;
+declare type Exclude<T, U> = T extends U ? never : T;
+declare type Extract<T, U> = T extends U ? T : never;
+declare type Define<T> = Exclude<T, undefined>;
+declare type PickFunction<TFunc extends Function> = Function<Parameters<TFunc>, ReturnType<TFunc>>;
+declare type Constructor<TInstance = any> = new (...args: any[]) => TInstance;
+declare type InstanceType<TConstructor extends Constructor<any>> = (TConstructor extends (new (...args: any[]) => infer TInstance) ? TInstance : never);
+declare type ConstructorParameters<TConstructor extends Constructor<any>> = (TConstructor extends (new (...args: infer TArgs) => any) ? TArgs : never);
+declare type Mixin<TFunc extends Function> = InstanceType<ReturnType<TFunc>>;
+export { Cast, UnwrapPromise, Suppress, ReturnType, Parameters, Nullable, NonNullable, Promisable, Exclude, Extract, Define, PickFunction, Constructor, InstanceType, ConstructorParameters, Mixin };

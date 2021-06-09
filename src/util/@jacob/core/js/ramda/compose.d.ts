@@ -1,0 +1,17 @@
+declare type Fn0<R> = () => R;
+declare type Fn1<T1, R> = (a1: T1) => R;
+declare type Fn2<T1, T2, R> = (a1: T1, a2: T2) => R;
+declare type Fn3<T1, T2, T3, R> = (a1: T1, a2: T2, a3: T3, ...args: any[]) => R;
+export default function compose(): <R>(a: R) => R;
+export default function compose<F extends Function>(f: F): F;
+export default function compose<A, R>(f1: (b: A) => R, f2: Fn0<A>): Fn0<R>;
+export default function compose<A, T1, R>(f1: (b: A) => R, f2: Fn1<T1, A>): Fn1<T1, R>;
+export default function compose<A, T1, T2, R>(f1: (b: A) => R, f2: Fn2<T1, T2, A>): Fn2<T1, T2, R>;
+export default function compose<A, T1, T2, T3, R>(f1: (b: A) => R, f2: Fn3<T1, T2, T3, A>): Fn3<T1, T2, T3, R>;
+export default function compose<A, B, R>(f1: (b: B) => R, f2: (a: A) => B, f3: Fn0<A>): Fn0<R>;
+export default function compose<A, B, T1, R>(f1: (b: B) => R, f2: (a: A) => B, f3: Fn1<T1, A>): Fn1<T1, R>;
+export default function compose<A, B, T1, T2, R>(f1: (b: B) => R, f2: (a: A) => B, f3: Fn2<T1, T2, A>): Fn2<T1, T2, R>;
+export default function compose<A, B, T1, T2, T3, R>(f1: (b: B) => R, f2: (a: A) => B, f3: Fn3<T1, T2, T3, A>): Fn3<T1, T2, T3, R>;
+export default function compose<R>(f1: (b: any) => R, ...funcs: Function[]): (...args: any[]) => R;
+export default function compose<R>(...funcs: Function[]): (...args: any[]) => R;
+export {};

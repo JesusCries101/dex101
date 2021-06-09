@@ -1,0 +1,61 @@
+{
+    "Accreditation": {
+        "Title": "Accreditation",
+        "AppBarTitle": "Accreditation",
+        "CardTitle": "Investor Accreditation",
+        "UserInformation": "User Information",
+        "IDVerification": "ID Verification",
+        "DocumentUpload": "Document Upload",
+        "DeclarationTitle": "Before you begin, you are going to need the following:",
+        "AddressProof": "Address Proof",
+        "FundProof": "Bank Statement or Fund Proof of no less than US$20,000 (Less than 3 months old)", 
+        "ID": "Government Issued ID",
+        "Webcam": "Working Web-Cam on your device for facial recognition",
+        "Ready": "Once you have everything ready, click 'NEXT' to begin 👉🏼",
+        "VerificationTitle": "Please click on the 'Start ID Verification' button below 👇🏼",
+        "VerificationReady": "After you have completed the verification, click 'NEXT' to continue 👉🏼",
+        "Next": "Next",
+        "Back": "Back",
+        "btn": "Click here to begin",
+        "StartVerification": "Start ID Verification",
+        "UploadTitle": "Upload your Proof of address, Proof of Funds, and Signed Self Declaration by clicking button below.",
+        "UploadInstructions": "Once you have submitted your registration, scroll to the bottom ⬇️ and click 'COMPLETE VERIFICATION' ✅",
+        "CompleteVerification": "Complete Verification",
+        "CompletedTitle": "Thank you for submitting your verification to us",
+        "CompletedText": "We are currently processing your submission. We will send out a email confirmation, once your account has been approved. You may also check the status of your account verification at   'My Account'   Page. Thank you."
+    },
+    "MyAccount": {
+        "Title": "My Account",
+        "VSTitle": "Identity Verification Status",
+        "VRList1": "Upload Government-issued ID",
+        "VRList2": "Complete Facial Recognition test",
+        "VSList1": "Deposit, Withdraw, Trade Cryptocurrencies",
+        "VSList2": "Deposit, Withdraw, USD and EURO",
+        "ASTitle": "Accreditation Status",
+        "ACList1": "Upload Proof of Address",
+        "ACList2": "Upload Proof of Funds",
+        "ACList3": "Sign Accredited Investor Self Declaration Form",
+        "ASList1": "Access to: ",
+        "ASList2": "Deposit, Withdraw, Trade Digital Assets",
+        "DSTitle": "Securitize On-Chain Registration",
+        "DSList1": "Complete Identity Verification",
+        "DSList2": "Complete User Accreditation",
+        "DRList1": "Download Metamask and register wallet address",
+        "DSList3": "Trade DS-Protocol Tokens on Cryptosx DEX",
+        "Requirements": "Requirements:",
+        "Benefits": "Benefits:",
+        "Start": "Start Accreditation",
+        "UnderReview": "PENDING / UNDER REVIEW",
+        "Accredited": "Accredited User",
+        "Verified": "Verified User"
+    },
+    "DigitalAssets": {
+        "Title": "Digital Assets"
+    },
+    "Exchange": {
+        "Title": "Exchange"
+    },
+    "Chart": {
+        "Title": "Dex Chart"
+    }
+}

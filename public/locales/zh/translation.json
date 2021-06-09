@@ -1,0 +1,61 @@
+{
+    "Accreditation": {
+        "Title": "数字资产审核",
+        "AppBarTitle": "数字资产审核",
+        "CardTitle": "用户审核程序",
+        "UserInformation": "用户信息",
+        "IDVerification": "身份验证",
+        "DocumentUpload": "文件上载",
+        "DeclarationTitle": "在开始之前，您需要准备以下文件：",
+        "AddressProof": "地址证明",
+        "FundProof": "不少于20,000美元的银行对帐单或资金证明（不多过3个月前）", 
+        "ID": "政府签发的身份证或护照",
+        "Webcam": "摄像头以进行面部识别",
+        "Ready": "准备好所有文档后，单击 “下一步” 开始 👉🏼",
+        "Next": "下一步",
+        "Back": "返回",
+        "btn": "这里开始",
+        "VerificationTitle": "请点击'开始身份验证' 👇🏼",
+        "VerificationReady": "完成身份验证以后，单击 “下一步” 继续 👉🏼",
+        "StartVerification": "开始身份验证",
+        "UploadTitle": "上传您的住址证明、资产证明以及签字后的承诺函",
+        "UploadInstructions": "提交完成后，将提示验资审核完成, 继续滚动屏幕到最下方 ⬇️，点击 '数字资产审核完成' ✅",
+        "CompleteVerification": "数字资产审核完成",
+        "CompletedTitle": "感谢您向我们提交验证",
+        "CompletedText": "我们目前正在处理您的申请。 您的帐户获得批准后，我们将发送电子邮件确认。 您也可以在  “我的帐户”  页面上检查帐户验证的状态。 谢谢"
+    },
+    "MyAccount": {
+        "Title": "我的帳戶",
+        "VSTitle": "身份验证",
+        "VRList1": "上载政府核发的身分证件",
+        "VRList2": "完整的面部识别测试",
+        "VSList1": "存入，提取，交易加密货币",
+        "VSList2": "存入，提取，美元和欧元",
+        "ASTitle": "数字资产审核验证",
+        "ACList1": "上传地址证明",
+        "ACList2": "上传资金证明",
+        "ACList3": "签署认可投资者自我声明表",
+        "ASList1": "獲得进入: ",
+        "ASList2": "存入，提取，交易数字资产加密货币",
+        "DSTitle": "Securitize 链上注册",
+        "DSList1": "完成身份验证",
+        "DSList2": "完成数字资产审核验证",
+        "DRList1": "下载Metamask并注册钱包地址",
+        "DSList3": "在 Cryptosx DEX 上交易 DS-Protocol 代币",
+        "Requirements": "要求:",
+        "Benefits": "好处:",
+        "Start": "开始验证",
+        "UnderReview": "尚未通过 / 审核中",
+        "Accredited": "认可超级参与者",
+        "Verified": "合格参与者"
+    },
+    "DigitalAssets": {
+        "Title": "数字资产"
+    },
+    "Exchange": {
+        "Title": "交易所"
+    },
+    "Chart": {
+        "Title": "Dex Chart"
+    }
+}

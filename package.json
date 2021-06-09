@@ -1,0 +1,111 @@
+{
+  "name": "0x-fe",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "0x.js": "^9.2.0",
+    "@0x/contract-wrappers": "^13.16.1",
+    "@0x/order-utils": "^9.0.0",
+    "@0x/protocol-utils": "^1.6.0",
+    "@0x/web3-wrapper": "^7.0.0",
+    "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
+    "@metamask/detect-provider": "^1.2.0",
+    "async-retry": "^1.3.1",
+    "axios": "^0.21.1",
+    "connected-react-router": "^6.9.1",
+    "ethers": "^5.1.4",
+    "history": "4.10.1",
+    "i18next": "^20.2.1",
+    "i18next-browser-languagedetector": "^6.1.0",
+    "i18next-http-backend": "^1.2.1",
+    "logdown": "^3.3.1",
+    "metamask-react": "^1.3.1",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.3",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.8.13",
+    "react-icons": "^4.2.0",
+    "react-lazily": "^0.9.0",
+    "react-loader-spinner": "^4.0.0",
+    "react-modal": "^3.13.1",
+    "react-redux": "^7.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-spring": "^9.0.0-rc.3",
+    "react-svg": "^13.0.2",
+    "react-timeago": "^5.2.0",
+    "react-tooltip": "^4.2.17",
+    "recharts": "^2.0.9",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "sanitize.css": "^12.0.1",
+    "styled-components": "^5.2.3",
+    "typesafe-actions": "^5.1.0",
+    "web3": "1.3.4",
+    "ws": "^7.2.5"
+  },
+  "scripts": {
+    "start": "cross-env PORT=3001 react-scripts --max_old_space_size=4096 start",
+    "build:tsc": "tsc -b",
+    "build": "react-scripts --max_old_space_size=4096 build",
+    "test": "REACT_APP_NETWORK_ID=50 REACT_APP_CHAIN_ID=1337 react-scripts test --env=node",
+    "test-once": "REACT_APP_NETWORK_ID=50 REACT_APP_CHAIN_ID=1337 CI=true react-scripts test --coverage",
+    "lint": "tslint --format stylish --project . 'src/**/*.{ts,tsx}' && npm run prettier-check",
+    "eject": "react-scripts eject",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/src/assets/**"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@0x/tslint-config": "^4.1.4",
+    "@0x/types": "^3.3.2",
+    "@types/async-retry": "^1.4.2",
+    "@types/enzyme": "^3.10.8",
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router": "^5.1.13",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/react-test-renderer": "^17.0.1",
+    "@types/react-timeago": "^4.1.2",
+    "@types/recharts": "^1.8.19",
+    "@types/redux-mock-store": "^1.0.2",
+    "@types/styled-components": "^5.1.9",
+    "coveralls": "^3.1.0",
+    "cross-env": "^7.0.3",
+    "factory.ts": "^0.5.1",
+    "http-proxy-middleware": "^1.2.0",
+    "jest-enzyme": "^7.1.2",
+    "react-test-renderer": "^17.0.2",
+    "redux-mock-store": "^1.5.4",
+    "typescript": "^4.2.4",
+    "yarn": "^1.22.10"
+  }
+}

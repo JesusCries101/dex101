@@ -1,0 +1,17 @@
+declare type Fn0<R> = () => R;
+declare type Fn1<T1, R> = (a1: T1) => R;
+declare type Fn2<T1, T2, R> = (a1: T1, a2: T2) => R;
+declare type Fn3<T1, T2, T3, R> = (a1: T1, a2: T2, a3: T3, ...args: any[]) => R;
+export default function pipe(): <R>(a: R) => R;
+export default function pipe<F extends Function>(f: F): F;
+export default function pipe<A, R>(f1: Fn0<A>, f2: (b: A) => R): Fn0<R>;
+export default function pipe<A, T1, R>(f1: Fn1<T1, A>, f2: (b: A) => R): Fn1<T1, R>;
+export default function pipe<A, T1, T2, R>(f1: Fn2<T1, T2, A>, f2: (b: A) => R): Fn2<T1, T2, R>;
+export default function pipe<A, T1, T2, T3, R>(f1: Fn3<T1, T2, T3, A>, f2: (b: A) => R): Fn3<T1, T2, T3, R>;
+export default function pipe<A, B, R>(f1: Fn0<A>, f2: (a: A) => B, f3: (b: B) => R): Fn0<R>;
+export default function pipe<A, B, T1, R>(f1: Fn1<T1, A>, f2: (a: A) => B, f3: (b: B) => R): Fn1<T1, R>;
+export default function pipe<A, B, T1, T2, R>(f1: Fn2<T1, T2, A>, f2: (a: A) => B, f3: (b: B) => R): Fn2<T1, T2, R>;
+export default function pipe<A, B, T1, T2, T3, R>(f1: Fn3<T1, T2, T3, A>, f2: (a: A) => B, f3: (b: B) => R): Fn3<T1, T2, T3, R>;
+export default function pipe<R>(f1: (b: any) => R, ...funcs: Function[]): (...args: any[]) => R;
+export default function pipe<R>(...funcs: Function[]): (...args: any[]) => R;
+export {};
